@@ -10,9 +10,9 @@ app = FastAPI(
     version="1.0.0",
 )
 
-@app.get("/")
-def read_root():
-    return {"message": "QR Code API is running. Go to /docs to test."}
+#@app.get("/")
+#def read_root():
+#    return {"message": "QR Code API is running. Go to /docs to test."}
 
 @app.get("/qr")
 def create_qr(text: str):
